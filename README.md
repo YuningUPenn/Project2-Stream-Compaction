@@ -36,6 +36,10 @@ CUDA Stream Compaction
 
   As a result, I guess thurst functions actually make a great use of parallel calculation in CPU, or have excellent algorithm that runs in just hundred microseconds and finishes the use of CUDA.
 
+#### Bottlenecks
+
+* From the nsight charts above, I think the current bottleneck is that the efficiency of memory usage is too low, so if I may apply shared memory to my algorithm, the efficiency may then increase.
+
 #### Result of running
 
 ```
